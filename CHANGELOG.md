@@ -1,3 +1,59 @@
+## 3.8.7 (2019-02-27)
+
+Features:
+  - update bootstrap dependency to 3.4.1
+
+## 3.8.6 (2019-02-09)
+
+Features:
+  - modern flat design for grids, dialogs and toolbars [StartSharp]
+  - when there are items without a tab, instead of showing an empty tab caption, create those property items before the tab (thanks @dfaruque)
+  - ability to register data scripts using classes like lookup scripts
+  - row field value name indexed get access should also look field by property name and also in dictionary data if available
+  - made target optional for PropertyGrid.save and it returns the new/passed target object. added value property to PropertyGrid.
+  
+## 3.8.5 (2019-01-03)
+
+Bugfixes:
+  - ensure not-mapped fields that are populated by MasterDetailRelation or LinkingSetRelation are only loaded if explicitly included (e.g. column is visible) for ListRequestHandler and loaded in default Details mode for RetrieveRequestHandler
+
+## 3.8.4 (2019-01-02)
+
+Bugfixes:
+  - fix inplace add script error in lookup editor
+
+## 3.8.3 (2018-12-29)
+
+Features:
+  - added idle (session) timeout feature and related sample [StartSharp]
+  - implemented impersonate as (login as) functionality in users page [StartSharp]
+  - backported two factor authentication sample to .NET core [StartSharp]
+  - added from address setting for mailing in .NET core version [StartSharp]
+  - added selectedItem getter in SelectEditor (thanks @dfaruque)
+  - changed protection level of clearItems, addItem and addOption in lookup editor to public (thanks @dfaruque)
+  - ability to specify location of button separator (thanks @Jin)
+  - added GridRadioSelectionMixin (thanks @Jin)
+  - moved most of lookup editor code like cascading, filtering etc. into select2editor base class so that they can be reused in custom editors
+  - enum editor supports multiple option
+  
+Bugfixes:
+  - fix ui look of datetimeeditor (thanks @adam feng)
+  - fix fonts folder casing issue in linux
+  - fixed OracleSchemaProvider based on pull request by @kilroyFR
+  - hotkeyContext of tool button definition is ignored (thanks @hannesb)
+
+## 3.8.2 (2018-12-04)
+
+Features:
+  - skip enum members that has Ignore attribute in ServerTypingsGenerator
+  - trigger change handler when now button is clicked in date/time editor
+  - trigger change event of TimeEditor hour input when minute changes
+
+Bugfixes:
+  - set minutes section readonly when time editor is readonly
+  - hide delete buttons on images when MultipleImageUploadEditor is readonly
+  - fix typo on unsubscribe viewOnDataChanged of SlickGrid
+
 ## 3.8.1 (2018-11-03)
 
 Bugfixes:
